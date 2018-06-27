@@ -1,5 +1,6 @@
 def main(argv):
-    if argv is None:
+    if (argv
+            or argv == 'test'):
         print('world')
     else:
         print(argv)
