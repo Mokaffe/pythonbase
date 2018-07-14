@@ -21,14 +21,14 @@ def log(func):
 
 def decorator(func):
     def wrapper(*args):
-        print("@decorator for %s" % func.__name__)
+        print("装饰器内部@decorator for %s" % func.__name__)
         func(*args)
 
     return wrapper
 
 
 def hello(name):
-    print("hello, %s" % name)
+    print("方法 本身 hello, %s" % name)
 
 
 @decorator
@@ -40,9 +40,11 @@ if __name__ == "__main__":
     print("\n-----0-------\n")
     new_hello_with_decorator = decorator(hello)
     new_hello_with_decorator("decorator")
+    print(new_hello_with_decorator.__name__)
 
     print("\n-----1-------\n")
-    hello("cool")
+    print(hello.__name__)
 
     print("\n----2--------\n")
     sugar_with_decorator("doudou")
+    print(sugar_with_decorator.__name__)
