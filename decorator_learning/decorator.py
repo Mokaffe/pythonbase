@@ -13,7 +13,7 @@
 
 def log(func):
     def wrapper(*args, **kwargs):
-        print("@log for %s" % func.__name__)
+        print("装饰器内部@log for %s" % func.__name__)
         return func(*args, **kwargs)
 
     return wrapper
