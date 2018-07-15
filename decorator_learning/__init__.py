@@ -4,4 +4,7 @@
 （*）一周一个Python 语法糖:装饰器 https://www.jianshu.com/p/fd746acbdf1e
 
 
+https://www.cnblogs.com/xieqiankun/p/python_decorate_method.html
+https://blog.csdn.net/nextdoor6/article/details/53502353
+
 """
