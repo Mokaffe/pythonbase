@@ -4,11 +4,11 @@ python3 虚拟环境
 
 安装虚拟环境
 ```
-virtualenv -p python3 venv
+virtualenv -p python3 .venv
 ```
 进入虚拟环境
 ```
-source venv/bin/activate
+source .venv/bin/activate
 ```
 退出虚拟环境
 ```
