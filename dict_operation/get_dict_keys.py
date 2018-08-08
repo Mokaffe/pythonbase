@@ -27,10 +27,20 @@ secrets = [
 
 if __name__ == '__main__':
     data_dict_keys = []
-    for item in secrets:
-        key = item['data']
-        print(key)
-        for key, value in item['data'].items():
+    # for item in secrets:
+    #     key = item['data']
+    #     print(key)
+    #     for key, value in item['data'].items():
+    #         data_dict_keys.append(key)
+    #
+    # print(data_dict_keys)
+
+    # 简单推导的方法获取key
+    print([key for secret in secrets for key in secret.get('data')])
+    for secret in secrets:
+        for key in secret.get('data'):
             data_dict_keys.append(key)
 
     print(data_dict_keys)
+
+    # dict 的方法 dict_object.keys() 也可以得到所有的keys
