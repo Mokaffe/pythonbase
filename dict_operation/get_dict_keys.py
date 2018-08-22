@@ -43,4 +43,11 @@ if __name__ == '__main__':
 
     print(data_dict_keys)
 
+    env = {'a': 'aaa', 'b': 'bbb', 'c': 'ccc'}
+    k = []
+    for key in env:
+        print(key)
+        k.append(key)
+    print(k)
+
     # dict 的方法 dict_object.keys() 也可以得到所有的keys

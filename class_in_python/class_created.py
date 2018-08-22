@@ -16,6 +16,10 @@ class People:
     def name(self):
         return self.__name
 
+    @name.setter
+    def name(self, tn):
+        self.__name = tn
+
     def age(self):
         return self.__age
 
@@ -27,10 +31,12 @@ class People:
 
     # 析构方法 __del__(self) 在释放对象时调用，支持重载。
     # 可以在里面进行一些释放资源的操作，不要显示调用
-    def __del__(self):
-        print("析构方法")
+    # def __del__(self):
+    #     print("析构方法")
 
 
 people = People('hbao', 12)
+
+people.name()
 print(people.age())
 print(people.name)
